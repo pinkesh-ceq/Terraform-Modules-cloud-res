@@ -5,7 +5,7 @@ provider "aws" {
 
 
 module "ec2-module" {
-  source = "./ec2-module"
+  source = "./ec2-module" // you can also provide github path or local computer path 
   ami = var.ami
   instance-type = var.instance-type
   name-tag = var.tag-name
